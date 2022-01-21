@@ -15,7 +15,11 @@ app.use(methodOverride('_method'))
 
 // routes
 
-app.get("/new", function(req, res) {
+app.get("/cereal", function(req, res) {
+    res.render("index.ejs")
+})
+
+app.get("/cereal/new", function(req, res) {
     res.render("new.ejs")
 })
 
