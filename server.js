@@ -14,7 +14,6 @@ app.use(express.static('public'));
 app.use(methodOverride('_method'))
 
 // routes
-
 app.get("/cereal", function(req, res) {
     res.render("index.ejs")
 })
