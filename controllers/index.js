@@ -1,3 +1,3 @@
 module.exports = {
-    cereal: require('./cereal_controller'),
+    cereal: require('./cereal_controller.js')
 }
