@@ -1,5 +1,4 @@
 const express = require('express');
-const { cereal } = require('.');
 const router = express.Router();
 const { Cereal } = require('../models')
 

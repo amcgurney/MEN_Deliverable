@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 const methodOverride = require('method-override');
+const connection = require('./config/db.connection.js');
+const cerealController = require('./controllers')
+
 
 const PORT = 4000;
 
@@ -14,9 +17,9 @@ app.use(express.static('public'));
 app.use(methodOverride('_method'))
 
 // routes
-app.get("/cereal", function(req, res) {
-    res.render("index.ejs")
-})
+// app.get("/cereal", function(req, res) {
+//     res.render("index.ejs")
+// })
 
 app.get("/cereal/new", function(req, res) {
     res.render("new.ejs")
