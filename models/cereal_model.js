@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const cerealSchema = new mongoose.Schema({
-    
     name: {
         type: String,
         required: [true, 'name can not be empty']
@@ -15,9 +14,6 @@ const cerealSchema = new mongoose.Schema({
         type: String,
         required: [true, "image can not be empty"],
     },
-    description: {
-        type: String,
-    }
 });
 
 const Cereal = mongoose.model('Cereal', cerealSchema);
